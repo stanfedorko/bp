@@ -1,0 +1,278 @@
+
+.header
+	position: relative
+	// min-height: 147px
+	// @include media-breakpoint-down(lg)
+	// 	padding: 0 0px
+	// @include media-breakpoint-down(sm)
+	// 	min-height: 140px
+	// @include media-breakpoint-down(xs)
+	// 	min-height: 115px
+
+	&_content
+		background-color: #fff
+		// box-shadow 0px 0px 26.73px 0.27px rgba(29, 29, 29, 0.15)
+
+.mobile-nav-bg
+	background-color: rgba(0,0,0,0.6)
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 998
+	display: none
+	transition: all .5s ease-in-out
+
+.mobile-nav-bg.show
+	display: block
+
+.custom-nav
+	min-height: 0px
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	z-index: 1007
+	background-color: transparent
+	+trans
+	padding: 0
+	.container
+		position: relative
+		padding: 0
+	.navbar-toggler
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: 15px
+		transition: all .5s ease-in-out
+		width: auto
+		height: auto
+		padding: 0
+		&:focus
+			outline: none
+	.navbar-toggler-icon
+		background-image: none
+		width: 28px
+		height: 20px
+		margin: 3px 
+		.top-line,
+		.middle-line,
+		.bottom-line
+			display: inline-block
+			background-color: #fff
+			height: 3px
+			border-radius: 1px
+			position: absolute
+			left: 0
+			right: 0
+			+trans
+		.top-line
+			background-color: $primary
+			top: 0
+		.middle-line
+			background-color: $primary
+			top: 50%
+			transform: translateY(-50%)
+			left: auto
+			right: 0
+			width: 34px
+		.bottom-line
+			background-color: $primary
+			bottom: 0
+			left: auto
+			right: 0
+			width: 34px
+	.navbar-toggler.active
+		color: #fff
+		right: 280px
+		.navbar-toggler-icon
+			.top-line
+				top: 50%
+				margin-top: -1px
+				transform: rotate(-45deg)
+				background-color: #fff
+				width: 100%
+			.middle-line
+				opacity: 0
+				background-color: #fff
+				width: 100%
+			.bottom-line
+				bottom: auto
+				top: 50%
+				margin-top: -1px
+				transform: rotate(45deg)
+				background-color: #fff
+				width: 100%
+	.navbar-nav 
+		padding-top: 15px
+		align-items: center
+		@include media-breakpoint-down(lg)
+			align-items: start
+		.nav-link
+			color: #C9DBE2
+			+rem(16)
+			font-weight: 400
+			font-family: 'Arimo', sans-serif
+			padding: 8px 5px
+			+trans
+			&:hover,
+			&:focus,
+				color: $primary
+		& .active>.nav-link,
+		& .nav-link.active,
+		& .nav-link.show,
+		& .show>.nav-link
+			color: $primary
+	.nav-item
+		padding: 0px 15px
+	.btn
+		min-width: 185px
+
+
+// .navbar-light .navbar-nav .nav-link:focus, 
+// .navbar-light .navbar-nav .nav-link:hover
+// 	color: $primary
+
+// .navbar-light .navbar-nav .active>.nav-link, 
+// .navbar-light .navbar-nav .nav-link.active, 
+// .navbar-light .navbar-nav .nav-link.show, 
+// .navbar-light .navbar-nav .show>.nav-link
+// 	color: $primary
+
+
+.navbar-brand
+	padding: 10px 0
+	line-height: 0
+	margin: 0
+	position: relative
+	z-index: 3
+	img
+		width: 100%
+		max-width: 257px
+		@include media-breakpoint-down(xs)
+			max-width: 220px
+
+
+.navbar-toggler
+	font-size: 16px
+
+
+@keyframes nav-down
+	0%
+		top: -100px
+	100%
+		top: 0px
+
+
+.header_content.smaller-menu
+	+trans
+	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.16)
+	.navbar-nav
+		padding: 0
+		background-color: transparent
+	.custom-nav
+		-webkit-animation: nav-down 0.6s 1
+		-moz-animation:    nav-down 0.6s 1
+		-o-animation:      nav-down 0.6s 1
+		animation:         nav-down 0.6s 1
+		+trans
+		box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.16)
+		background-color: #fff
+		border-top: 0px solid transparent
+		border-bottom: 0px solid transparent
+		.navbar-toggler
+			color: #fff
+			font-size: 16px
+		.navbar-toggler.active
+			color: #fff
+			.top-line,
+			.middle-line,
+			.bottom-line
+				background-color: #fff
+		.navbar-nav 
+			.nav-link
+				color: #56677b
+				@include media-breakpoint-down(lg)
+					color: #C9DBE2
+				&:hover
+					color: $primary
+	.navbar-brand 
+		padding: 5px 0
+		img
+			max-width: 164px
+
+.navbar-toggler
+	cursor: pointer
+	padding: 5px 10px
+
+.navbar-app-link
+	padding: 24px
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	.app-link
+		margin-right: 0
+		margin-bottom: 12px
+
+
+
+
+@media (min-width: 1200px)
+	.header_content.smaller-menu
+		.custom-nav
+			.navbar-collapse
+				position: static
+
+
+
+
+@media screen and (max-width: 1199px)
+	.header 
+		.navbar-nav
+			background-color: transparent
+	.custom-nav
+		.container
+			width: 100%
+			max-width: 100%
+			padding-left: 15px
+			padding-right: 15px
+		.navbar-toggler
+			z-index: 999
+			border: none
+			margin-left: 20px
+			color: #000
+			padding-right: 0
+			padding-left: 0
+		.navbar-collapse
+			// background-color: #34363A
+			background-color: $darknes-blue
+			position: fixed
+			right: 0
+			top: 0
+			height: 100vh
+			width: 260px
+			padding-top: 30px
+			padding-bottom: 50px
+			padding-left: 0
+			transition: all .5s ease-in-out
+			z-index: 1003
+			overflow-y: scroll
+		.mobile-nav
+			right: -260px
+			opacity: 0
+			margin: 0
+		.mobile-nav.show
+			right: 0
+			opacity: 1
+		.navbar-nav 
+			.nav-item
+				margin-bottom: 10px
+				padding: 0 24px
+			.nav-link
+				color: #fff
+				margin: 0
+				padding: 0.25rem 0
+				display: inline-block
+				border-bottom: 2px solid transparent

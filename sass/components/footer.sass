@@ -1,0 +1,42 @@
+// footer
+.footer
+  background-color: $darknes-blue
+  padding: 0px 0 100px
+  @include media-breakpoint-down(md)
+    padding: 0px 0 60px
+  &-hr
+    margin-bottom: 100px
+    margin-top: 0
+    border-top: 1px solid rgba($light , 0.4)
+    @include media-breakpoint-down(md)
+      margin-bottom: 60px
+  &-logo
+    display: inline-block
+    @include media-breakpoint-down(md)
+      margin-bottom: 50px
+    img
+      width: 100%
+      max-width: 257px
+  &-list
+    margin: 0
+    padding: 0
+    @include media-breakpoint-down(md)
+      margin-bottom: 40px
+    li 
+      list-style: none
+      margin-bottom: 10px
+      line-height: 32px
+      &:first-child
+        margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0px
+    a
+      display: inline-block
+      color: rgba($light, 0.5)
+
+
+
+
+
+
+// end footer

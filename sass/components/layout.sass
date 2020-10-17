@@ -1,0 +1,162 @@
+
+.section-subtitle
+  color: $info
+  margin-bottom: 20px
+  text-transform: uppercase
+  font-weight: 500
+.section-title
+  max-width: 650px
+  margin-bottom: 80px
+  @include media-breakpoint-down(md)
+    margin-bottom: 50px
+
+
+
+.subsection-blue-bg
+  background-color: rgba(199,229,241,0.2)
+  position: relative
+  overflow: hidden
+  z-index: 1
+  &::before
+    display: inline-block
+    content: ""
+    position: absolute
+    z-index: 2
+    right: 0
+    top: 0
+    width: 0
+    height: 0
+  &::after
+    display: inline-block
+    content: ""
+    position: absolute
+    z-index: 2
+    left: 0
+    bottom: 0
+    width: 0
+    height: 0
+
+@media (max-width: 2560px)
+  .subsection-blue-bg
+    &::before
+      border-top: 230px solid #fff
+      border-left: 2560px solid transparent
+    &::after
+      border-bottom: 230px solid #fff
+      border-right: 2560px solid transparent
+
+@media (max-width: 1920px)
+  .subsection-blue-bg
+    &::before
+      border-top: 150px solid #fff
+      border-left: 1920px solid transparent
+    &::after
+      border-bottom: 150px solid #fff
+      border-right: 1920px solid transparent
+
+@media (max-width: 1440px)
+  .subsection-blue-bg
+    &::before
+      border-left: 1440px solid transparent
+    &::after
+      border-right: 1440px solid transparent
+
+@media (max-width: 1024px)
+  .subsection-blue-bg
+    &::before
+      border-top: 120px solid #fff
+      border-left: 1024px solid transparent
+    &::after
+      border-bottom: 120px solid #fff
+      border-right: 1024px solid transparent
+
+
+.info-section
+  position: relative
+  z-index: 4
+  &-textbox
+    height: 100%
+    display: flex
+    flex-wrap: wrap
+    align-content: center
+    @include media-breakpoint-down(md)
+      margin-bottom: 50px
+      height: auto
+  &-title
+    color: $primary
+    padding-left: 10px
+    border-left: 2px solid $info
+    margin-bottom: 20px
+    line-height: 14px
+    @include media-breakpoint-down(sm)
+      line-height: 20px
+  &-text
+    margin-bottom: 30px
+    line-height: 24px
+    color: $text-secondary
+  &-image
+    @include media-breakpoint-down(md)
+      margin-bottom: 10px
+    img
+      width: 100%
+      max-width: 691px
+
+.section
+  padding: 120px 0
+  background-color: #fff
+  @include media-breakpoint-down(md)
+    padding: 80px 0
+
+.section-darknes-bg
+  background-color: $darknes-blue
+  color: #fff
+  padding: 160px 0 160px
+  position: relative
+  overflow: hidden
+  z-index: 1
+  @include media-breakpoint-down(md)
+    padding: 180px 0 100px
+  &::before
+    content: ""
+    display: inline-block
+    width: 0
+    height: 0
+    position: absolute
+    top: 0
+    right: 0
+
+@media (max-width: 2560px)
+  .section-darknes-bg
+    &::before
+      border-top: 230px solid #fff
+      border-left: 2560px solid transparent
+
+@media (max-width: 1920px)
+  .section-darknes-bg
+    &::before
+      border-top: 150px solid #fff
+      border-left: 1920px solid transparent
+
+@media (max-width: 1440px)
+  .section-darknes-bg
+    &::before
+      border-left: 1440px solid transparent
+
+@media (max-width: 1024px)
+  .section-darknes-bg
+    &::before
+      border-top: 120px solid #fff
+      border-left: 1024px solid transparent
+
+
+
+
+
+
+
+
+
+
+
+
+

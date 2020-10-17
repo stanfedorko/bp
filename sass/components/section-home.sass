@@ -1,0 +1,82 @@
+.section-home
+	background-image: url(../img/home-bg.jpg)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	background-color: #fff
+	&-blink
+		padding: 190px 0px 50px
+		background-color: rgba(24, 24, 31, 0)
+		@include media-breakpoint-down(sm)
+			height: auto
+			.container
+				width: 100%
+				max-width: 100%
+	&-title
+		color: #fff
+		margin-bottom: 10px
+		font-weight: 800
+		line-height: 80px
+		@include media-breakpoint-down(lg)
+			line-height: inherit
+		@include media-breakpoint-down(sm)
+			font-weight: 700
+		br
+			@include media-breakpoint-down(xs)
+				display: none
+	&-subtitle
+		color: #fff
+		margin-bottom: 30px
+		font-weight: 300
+		line-height: 27px
+	&-content
+		margin-bottom: 120px
+	&-cardbox
+		display: flex
+		justify-content: space-around
+		margin-bottom: 90px
+		padding-top: 24px
+		@include media-breakpoint-down(lg)
+			padding-top: 0
+			margin-bottom: 30px
+		@include media-breakpoint-down(xs)
+			display: block
+			margin-bottom: 0
+		&:last-child
+			margin-bottom: 0
+			@include media-breakpoint-down(lg)
+				margin-bottom: 60px
+	&-card
+		padding: 20px
+		display: flex
+		max-width: 220px
+		min-width: 220px
+		align-items: center
+		justify-content: center
+		border: 1px solid #C9DBE2
+		border-radius: 10px
+		+trans
+		background-color: transparent
+		@include media-breakpoint-down(xs)
+			margin-bottom: 20px
+		&--img
+			+trans
+			width: 100%
+			max-width: 45px
+			margin-right: 10px
+		&--title
+			color: #fff
+			margin: 0
+			line-height: 28px
+			text-align: left
+		&:hover
+			text-decoration: none
+			background-color: rgba(0,0,0,0.2)
+		&:hover .section-home-card--img
+			transform: scale(1.05)
+
+
+
+
+
+

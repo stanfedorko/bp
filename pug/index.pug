@@ -1,0 +1,317 @@
+extends templates/template.pug
+
+block content
+
+	// .main
+	main.main
+		section.section-home
+			.section-home-blink
+				.container
+					.row
+						.col-xl-6
+							.section-home-content
+								h1.section-home-title.bigger
+									| Essential Tools for 
+									br 
+									| Patent Prosecution
+								h4.section-home-subtitle
+									| Be a better patent attorney, impress clients, and increase your bottom line using our suite of tools to obtain higher quality patents, in less time, and at lower cost.
+								a(href="#0").btn.btn-primary
+									| Try Now
+							///section-home-content
+						///col
+						.col-xl-6
+							.section-home-cardbox.d-none.d-xl-flex
+								a(href="#0").section-home-card
+									img.section-home-card--img(src="img/icon-home-card-1.png", alt="")
+									h4.section-home-card--title
+										| Patent 
+										br
+										| Proofreading
+								a(href="#0").section-home-card
+									img.section-home-card--img(src="img/icon-home-card-2.png", alt="")
+									h4.section-home-card--title
+										| Patent 
+										br
+										| Plex
+							.section-home-cardbox.d-none.d-xl-flex
+								a(href="#0").section-home-card
+									img.section-home-card--img(src="img/icon-home-card-3.png", alt="")
+									h4.section-home-card--title
+										| Examiner 
+										br
+										| Statistics
+								a(href="#0").section-home-card
+									img.section-home-card--img(src="img/icon-home-card-4.png", alt="")
+									h4.section-home-card--title
+										| Art Unit 
+										br
+										| Predictor
+							///.section-home-cardbox
+						///col
+					///.row
+					.home-section-logos
+						.owl-carousel.owl-theme.js-owl-home-logos.home-section-logos--owl
+							.item
+								img(src="img/home-section-logos/ArentFox2.png", alt="", style="max-width: 81px;")
+							.item
+								img(src="img/home-section-logos/Behmke2.png", alt="", style="max-width: 81px;")
+							.item
+								img(src="img/home-section-logos/BookoffMcAndrews2.png", alt="", style="max-width: 27px;")
+							.item
+								img(src="img/home-section-logos/BrakeHughes2.png", alt="", style="max-width: 65px;")
+							.item
+								img(src="img/home-section-logos/CasimirJones2.png", alt="", style="max-width: 111px;")
+							.item
+								img(src="img/home-section-logos/Cisco2.png", alt="", style="max-width: 57px;")
+							.item
+								img(src="img/home-section-logos/DLAPiper2.png", alt="", style="max-width: 51px;")
+							.item
+								img(src="img/home-section-logos/EricksonKernell2.png", alt="", style="max-width: 104px;")
+							.item
+								img(src="img/home-section-logos/eriseIP2.png", alt="", style="max-width: 99px;")
+							.item
+								img(src="img/home-section-logos/HuntonAK2.png", alt="", style="max-width: 108px;")
+					///home-section-logos
+				///container
+			///section-home-blink
+		///section-home
+
+
+		section.section-products
+			img.witnesses-img(src="img/witnesses.png", alt="")
+			.container
+				h5.section-subtitle
+					| our products
+				h2.section-title
+					| Tools We Created to Make Patent Attorneys’ Lives Better
+			///container
+			.subsection-blue-bg
+				.container
+					.info-section
+						.row
+							.col-lg-6.order-12.order-lg-1
+								.info-section-textbox
+									h3.info-section-title
+										| Automated Patent Proofreading
+									p.info-section-text
+										| Reduce risk, impress clients with quality work, and increase profits with more efficient work. We check your patent claims for numbering errors, antecedent basis errors, word support, and more.
+									a(href="#0").btn.btn-primary
+										| Try Proofreading
+								///.info-section-text
+							///col
+							.col-lg-6.order-1.order-lg-12
+								.info-section-image
+									img(src="img/products-img-1.png", alt="")
+							///col
+						///row
+					///.info-section
+					.info-section
+						.row
+							.col-lg-6
+								.info-section-image
+									img(src="img/products-img-2.png", alt="")
+							///col
+							.col-lg-6
+								.info-section-textbox
+									h3.info-section-title
+										| Examiner Statistics
+									p.info-section-text
+										| Obtain broader patents for your clients, in less time, and at lower cost. We have a page for each patent examiner with grant rates, difficulty rankings, appeals statistics, and more.
+									a(href="#0").btn.btn-primary
+										| Try Examiner Stats
+								///.info-section-text
+							///col
+						///row
+					///.info-section
+					.info-section
+						.row
+							.col-lg-6.order-12.order-lg-1
+								.info-section-textbox
+									h3.info-section-title
+										| PatentPlex
+									p.info-section-text
+										| Your one-stop shop for information about U.S. patents. See patent family trees, review our prosecution timelines, and review patents with our patent analyzer.
+									a(href="#0").btn.btn-primary
+										| Try PatentPlex
+								///.info-section-text
+							///col
+							.col-lg-6.order-1.order-lg-12
+								.info-section-image
+									img(src="img/products-img-3.png", alt="")
+							///col
+						///row
+					///.info-section
+					.info-section
+						.row
+							.col-lg-6
+								.info-section-image
+									img(src="img/products-img-4.png", alt="")
+							///col
+							.col-lg-6
+								.info-section-textbox
+									h3.info-section-title
+										| Art Unit Predictor
+									p.info-section-text
+										| Predict the USPTO groups and art units that will be assigned to your patent application. See the dangerous words and revise our claims to steer your application to a preferred art unit.
+									a(href="#0").btn.btn-primary
+										| Try Art Unit Predictor
+								///.info-section-text
+							///col
+						///row
+					///.info-section
+				///.container
+			///.subsection-blue-bg
+		///section-products
+
+
+		section.section
+			.container
+				h5.section-subtitle
+					| why use our products
+				h2.section-title
+					| Be a Better Patent Attorney with 
+					span.text-primary
+						| Patent Bots
+				.row
+					.col-md-6.col-lg-4
+						.card-info
+							.card-info-img
+								img(src="img/icon-card-01.png", alt="")
+							h3.card-info-title
+								| Increase Profits
+							p.card-info-text
+								| Increase attorney realization rates and write off less time, especially with fixed-fee work.  Attract more clients with your reputation for producing top quality work.
+						///.card-info
+					///col
+					.col-md-6.col-lg-4
+						.card-info
+							.card-info-img
+								img(src="img/icon-card-02.png", alt="")
+							h3.card-info-title
+								| Build a stronger legal team
+							p.card-info-text
+								| Enable your attorneys to spend more time on substantive tasks and less time on mundane work. Improve quality control and train associates faster by letting them learn from our AI.
+						///.card-info
+					///col
+					.col-md-6.col-lg-4
+						.card-info
+							.card-info-img
+								img(src="img/icon-card-03.png", alt="")
+							h3.card-info-title
+								| Impress Clients
+							p.card-info-text
+								| Present high quality work to clients for review and avoid embarrassing outcomes like non-compliant amendments. Obtain issued patents more quickly with data-driven decisions.
+						///.card-info
+					///col
+				///.row
+		///why use our products
+
+
+		section.section
+			.container
+				h5.section-subtitle
+					| testimonials
+				h2.section-title
+					| What Our Clients Have to Say
+				.owl-carousel.owl-theme.js-owl-reviews.owl-reviews
+					.item
+						blockquote.card-review
+							img(src="img/icon-review.png", alt="").card-review-icon
+							p.card-review-text
+								| Clients put a lot of emphasis on getting everything right in the first draft.  Patent Bots helps us make a good first impression.
+							.card-review-author
+								img(src="img/review-author-img-1.jpg", alt="").card-review-author--img
+								h5.card-review-author--title
+									| Ilan Barzilay
+								h6.card-review-author--subtitle
+									| Pierce Atwood
+						///.card-review
+					///.item
+					.item
+						blockquote.card-review
+							img(src="img/icon-review.png", alt="").card-review-icon
+							p.card-review-text
+								| Patent Bots proofreading reduces the time that I spend fixing mistakes and allows me to focus on legal strategy and substantive issues.
+							.card-review-author
+								img(src="img/review-author-img-2.jpg", alt="").card-review-author--img
+								h5.card-review-author--title
+									| Ngai Zhang
+								h6.card-review-author--subtitle
+									| Pillsbury
+						///.card-review
+					///.item
+					.item
+						blockquote.card-review
+							img(src="img/icon-review.png", alt="").card-review-icon
+							p.card-review-text
+								| Patent Bots helps you find errors that otherwise might get missed, resulting in a high quality finished product.
+							.card-review-author
+								img(src="img/review-author-img-3.jpg", alt="").card-review-author--img
+								h5.card-review-author--title
+									| Dave Divine
+								h6.card-review-author--subtitle
+									| Lee &amp; Hayes
+						///.card-review
+					///.item
+					.item
+						blockquote.card-review
+							img(src="img/icon-review.png", alt="").card-review-icon
+							p.card-review-text
+								| Patent Bots helps with quality control.  Our attorneys can spend less time checking for antecedent based errors and get more accurate results.
+							.card-review-author
+								img(src="img/review-author-img-4.jpg", alt="").card-review-author--img
+								h5.card-review-author--title
+									| Sean O'Dowd
+								h6.card-review-author--subtitle
+									| Neugeboren O'Dowd
+						///.card-review
+					///.item
+		///testimonials
+
+
+		section.section-darknes-bg
+			.container
+				h5.section-subtitle
+					| try our products now
+				h2.section-title
+					| You Can’t Afford Not to Use 
+					span.text-primary
+						| Patent Bots
+				.row
+					.col-md-6.col-lg-4
+						.card-info
+							.card-info-img
+								img(src="img/icon-card-04.png", alt="")
+							h3.card-info-title
+								| Best pricing on the market
+							p.card-info-text.text-light-grey
+								| A la carte pricing to provide the best value for your firm. Monthly and annual plans available.
+						///.card-info
+					///col
+					.col-md-6.col-lg-4
+						.card-info
+							.card-info-img
+								img(src="img/icon-card-05.png", alt="")
+							h3.card-info-title
+								| Saves time
+							p.card-info-text.text-light-grey
+								| Pays for itself with the time you save. Avoiding one non-compliant amendment gives you an ROI.
+						///.card-info
+					///col
+					.col-md-6.col-lg-4
+						.card-info
+							.card-info-img
+								img(src="img/icon-card-06.png", alt="")
+							h3.card-info-title
+								| Firm-wide access
+							p.card-info-text.text-light-grey
+								| Affordable, firm-wide subscriptions to give your entire law-firm access to our tools.
+						///.card-info
+					///col
+				///.row
+				.text-center.pt-5
+					a(href="#0").btn.btn-primary
+						| Try Patent Bots Now
+		///try our products now
+	/// .main

@@ -1,0 +1,39 @@
+
+.owl-nav
+	display: none
+
+.owl-theme .owl-dots
+	margin-bottom: 0px
+	.owl-dot 
+		span
+			+trans
+			width: 7px
+			height: 7px
+			background-color: #999999
+		&.active 
+			span
+				background-color: $primary
+
+.owl-theme.owl-image .owl-dots
+	padding-top: 10px
+	margin-bottom: 0
+
+.owl-carousel .owl-stage-outer
+	margin-bottom: 10px
+
+.owl-reviews
+	.owl-stage-outer
+		padding: 35px 0px 45px
+	.item 
+		padding: 20px 20px 30px 20px
+	.owl-item
+		&:nth-child(even)
+			top: 35px
+		&:nth-child(odd)
+			top: -35px
+
+.home-section-logos--owl 
+	.owl-item 
+		img
+			margin: 0 auto
+
