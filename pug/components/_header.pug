@@ -13,14 +13,14 @@ header#home.header
 				.mobile-nav-bg
 				.navbar-collapse.mobile-nav
 					ul.navbar-nav.primary-nav.ml-auto.navbar-nav-js
-						li.nav-item
-							a.nav-link.js-nav-link(href="#0") Art Unit Predictor
-						li.nav-item
-							a.nav-link.js-nav-link(href="#0") Examiner Stats
-						li.nav-item
-							a.nav-link.js-nav-link(href="#0") Patent Plex
-						li.nav-item
-							a.nav-link.js-nav-link(href="#0") Proofreading
+						li.nav-item.dropdown
+							a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+								| Products
+							.dropdown-menu(aria-labelledby='navbarDropdown')
+								a.dropdown-item.js-nav-link(href="#0") Art Unit Predictor
+								a.dropdown-item.js-nav-link(href="#0") Examiner Stats
+								a.dropdown-item.js-nav-link(href="#0") Patent Plex
+								a.dropdown-item.js-nav-link(href="#0") Proofreading
 						li.nav-item
 							a.nav-link.js-nav-link(href="#0") Pricing
 						li.nav-item

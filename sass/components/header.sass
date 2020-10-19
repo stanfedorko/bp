@@ -1,17 +1,8 @@
 
 .header
 	position: relative
-	// min-height: 147px
-	// @include media-breakpoint-down(lg)
-	// 	padding: 0 0px
-	// @include media-breakpoint-down(sm)
-	// 	min-height: 140px
-	// @include media-breakpoint-down(xs)
-	// 	min-height: 115px
-
 	&_content
 		background-color: #fff
-		// box-shadow 0px 0px 26.73px 0.27px rgba(29, 29, 29, 0.15)
 
 .mobile-nav-bg
 	background-color: rgba(0,0,0,0.6)
@@ -29,7 +20,7 @@
 
 .custom-nav
 	min-height: 0px
-	position: fixed
+	position: absolute
 	top: 0
 	right: 0
 	left: 0
@@ -130,17 +121,6 @@
 		min-width: 185px
 
 
-// .navbar-light .navbar-nav .nav-link:focus, 
-// .navbar-light .navbar-nav .nav-link:hover
-// 	color: $primary
-
-// .navbar-light .navbar-nav .active>.nav-link, 
-// .navbar-light .navbar-nav .nav-link.active, 
-// .navbar-light .navbar-nav .nav-link.show, 
-// .navbar-light .navbar-nav .show>.nav-link
-// 	color: $primary
-
-
 .navbar-brand
 	padding: 10px 0
 	line-height: 0
@@ -156,51 +136,6 @@
 
 .navbar-toggler
 	font-size: 16px
-
-
-@keyframes nav-down
-	0%
-		top: -100px
-	100%
-		top: 0px
-
-
-.header_content.smaller-menu
-	+trans
-	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.16)
-	.navbar-nav
-		padding: 0
-		background-color: transparent
-	.custom-nav
-		-webkit-animation: nav-down 0.6s 1
-		-moz-animation:    nav-down 0.6s 1
-		-o-animation:      nav-down 0.6s 1
-		animation:         nav-down 0.6s 1
-		+trans
-		box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.16)
-		background-color: #fff
-		border-top: 0px solid transparent
-		border-bottom: 0px solid transparent
-		.navbar-toggler
-			color: #fff
-			font-size: 16px
-		.navbar-toggler.active
-			color: #fff
-			.top-line,
-			.middle-line,
-			.bottom-line
-				background-color: #fff
-		.navbar-nav 
-			.nav-link
-				color: #56677b
-				@include media-breakpoint-down(lg)
-					color: #C9DBE2
-				&:hover
-					color: $primary
-	.navbar-brand 
-		padding: 5px 0
-		img
-			max-width: 164px
 
 .navbar-toggler
 	cursor: pointer
@@ -246,7 +181,6 @@
 			padding-right: 0
 			padding-left: 0
 		.navbar-collapse
-			// background-color: #34363A
 			background-color: $darknes-blue
 			position: fixed
 			right: 0

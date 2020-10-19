@@ -1,0 +1,14 @@
+.dropdown-toggle
+  &::after
+    border: none
+    content: ""
+    width: 0
+    height: 0
+    border-left: 4px solid transparent
+    border-right: 4px solid transparent
+    border-top: 6px solid #c9dbe2
+    vertical-align: 2px
+    +trans
+  &:focus::after,
+  &:hover::after
+    border-top: 6px solid $primary
