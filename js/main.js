@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 	// owl-carousel js-owl-home-logos
-	var owl1 = $('.js-owl-home-logos');
+	let owl1 = $('.js-owl-home-logos');
 	owl1.owlCarousel({
 		loop:true,
 		margin:10,
@@ -72,7 +72,7 @@ $(document).ready(function() {
 
 
 	// owl-carousel js-owl-reviews
-	var owl2 = $('.js-owl-reviews');
+	let owl2 = $('.js-owl-reviews');
 	owl2.owlCarousel({
 		nav:true,
 		responsive:{

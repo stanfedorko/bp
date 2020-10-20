@@ -1,14 +1,20 @@
-
-.section-subtitle
-  color: $info
-  margin-bottom: 20px
-  text-transform: uppercase
-  font-weight: 500
-.section-title
-  max-width: 650px
-  margin-bottom: 80px
+.section
+  padding: 120px 0
+  background-color: #fff
+  position: relative
+  z-index: 1
   @include media-breakpoint-down(md)
-    margin-bottom: 50px
+    padding: 80px 0
+  &-subtitle
+    color: $info
+    margin-bottom: 20px
+    text-transform: uppercase
+    font-weight: 500
+  &-title
+    max-width: 650px
+    margin-bottom: 80px
+    @include media-breakpoint-down(md)
+      margin-bottom: 50px
 
 
 
@@ -17,6 +23,9 @@
   position: relative
   overflow: hidden
   z-index: 1
+  & .container
+    position: relative
+    z-index: 3
   &::before
     display: inline-block
     content: ""
@@ -101,11 +110,6 @@
       width: 100%
       max-width: 691px
 
-.section
-  padding: 120px 0
-  background-color: #fff
-  @include media-breakpoint-down(md)
-    padding: 80px 0
 
 .section-darknes-bg
   background-color: $darknes-blue
@@ -116,6 +120,9 @@
   z-index: 1
   @include media-breakpoint-down(md)
     padding: 180px 0 100px
+  & .container
+    position: relative
+    z-index: 3
   &::before
     content: ""
     display: inline-block
@@ -152,6 +159,44 @@
 
 
 
+
+.section-top-white-angel
+  position: relative
+  z-index: 1
+  &::before
+    display: inline-block
+    content: ""
+    position: absolute
+    z-index: 2
+    right: 0
+    width: 0
+    height: 0
+
+@media (max-width: 2560px)
+  .section-top-white-angel
+    &::before
+      top: -230px
+      border-bottom: 230px solid #fff
+      border-right: 2560px solid transparent
+
+@media (max-width: 1920px)
+  .section-top-white-angel
+    &::before
+      top: -150px
+      border-bottom: 150px solid #fff
+      border-right: 1920px solid transparent
+
+@media (max-width: 1440px)
+  .section-top-white-angel
+    &::before
+      border-right: 1440px solid transparent
+
+@media (max-width: 1024px)
+  .section-top-white-angel
+    &::before
+      top: -120px
+      border-bottom: 120px solid #fff
+      border-right: 1024px solid transparent
 
 
 

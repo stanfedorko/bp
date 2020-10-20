@@ -24,13 +24,19 @@
 .owl-reviews
 	.owl-stage-outer
 		padding: 35px 0px 45px
+		@include media-breakpoint-down(sm)
+			padding: 0
 	.item 
 		padding: 20px 20px 30px 20px
 	.owl-item
 		&:nth-child(even)
 			top: 35px
+			@include media-breakpoint-down(sm)
+				top: 0
 		&:nth-child(odd)
 			top: -35px
+			@include media-breakpoint-down(sm)
+				top: 0
 
 .home-section-logos--owl 
 	.owl-item 

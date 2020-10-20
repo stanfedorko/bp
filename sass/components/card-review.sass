@@ -8,6 +8,9 @@
   display: flex
   align-items: flex-start
   flex-direction: column
+  @include media-breakpoint-down(sm)
+    min-height: 300px
+    padding: 30px 15px
   &-icon
     width: 100%
     max-width: 50px
