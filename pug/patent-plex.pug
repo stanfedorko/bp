@@ -1,0 +1,239 @@
+extends templates/template.pug
+
+block content
+	// .main
+	main.main
+		section.section-home.patent-plex-home
+			.section-home-blink
+				.container
+					.section-home-content
+						h1.section-home-title.bigger
+							| PatentPlex
+						h4.section-home-subtitle
+							| Your one-stop shop for information about
+							br
+							| U.S. patents and applications.
+						a(href="#0").btn.btn-primary
+							| Try Patent Plex
+				///container
+			///section-home-blink
+		///section-home
+
+
+		section.section-top-white-angel.pt-5.pt-sm-4.p-md-0
+			.container
+				h3.info-section-title.text-dark
+					| Save time with PatentPlex:
+				.row
+					.col-lg-4.col-md-6
+						.advantage-card
+							.advantage-card--header
+								strike.advantage-card--lowtime
+									| 30 minutes
+								img(src="img/arrows-right.png", alt="").advantage-card--icon-right
+								span.advantage-card--time
+									| 2 seconds
+							.advantage-card--text
+								| Generate claim chart
+						///.advantage-card
+					///col
+					.col-lg-4.col-md-6
+						.advantage-card
+							.advantage-card--header
+								strike.advantage-card--lowtime
+									| 2 hours
+								img(src="img/arrows-right.png", alt="").advantage-card--icon-right
+								span.advantage-card--time
+									| 2 seconds
+							.advantage-card--text
+								| Generate family tree
+						///.advantage-card
+					///col
+					.col-lg-4.col-md-6
+						.advantage-card
+							.advantage-card--header
+								strike.advantage-card--lowtime
+									| Eternity
+								img(src="img/arrows-right.png", alt="").advantage-card--icon-right
+								span.advantage-card--time
+									| 2 seconds
+							.advantage-card--text
+								| Access PAIR
+						///.advantage-card
+					///col
+				///.row
+			///.container
+
+
+		section.section-products.pb-0
+			.container
+				h5.section-subtitle
+					| features
+				h2.section-title
+					| How 
+					span.text-primary
+						| PatentPlex 
+					| helps
+			///container
+			.subsection-blue-bg.gradient-bg
+				.container
+					.info-section.info-section-padding.pt-0
+						.row
+							.col-lg-6.order-12.order-lg-1
+								.info-section-textbox
+									h3.info-section-title
+										| Patent Family Trees
+									p.info-section-text.mb-0
+										| See a family tree for your patent.  Family trees are generated in real-time from public data sources and include PCTs and foreign patents. We also provide a downloadable list of all family members, including relevant dates and patent numbers. Our full-screen mode makes it easy to view complex family trees.
+								///.info-section-text
+							///col
+							.col-lg-6.order-1.order-lg-12
+								.info-section-image
+									img(src="img/products-img-3.png", alt="")
+							///col
+						///row
+					///.info-section
+					.info-section.info-section-padding
+						.row
+							.col-lg-6
+								.info-section-image
+									img(src="img/products-img-5.png", alt="")
+							///col
+							.col-lg-6
+								.info-section-textbox
+									h3.info-section-title
+										| Patent Timelines
+									p.info-section-text.mb-0
+										| Easy access to the history of your patent. If you are looking at a patent for the first time or one that you haven’t seen in a while, you can quickly get up to speed.  Patent timelines include key dates (priority, filing, publication, and grant dates) and important events from prosecution (office actions, RCEs, and appeals), and post-issuance events (maintenance fees and expiration date).
+								///.info-section-text
+							///col
+						///row
+					///.info-section
+					.info-section.info-section-padding
+						.row
+							.col-lg-6.order-12.order-lg-1
+								.info-section-textbox
+									h3.info-section-title
+										| Patent Analyzer
+									p.info-section-text.mb-0
+										| The easiest way to analyze any U.S. patent application or issued patent. We present the specification, claims, reference labels, and figures in four independently scrollable columns. Highlight words or phrases with your mouse to create a hotlist of words and phrases that are highlighted in the columns. Useful for both prosecutors and litigators.
+								///.info-section-text
+							///col
+							.col-lg-6.order-1.order-lg-12
+								.info-section-image
+									img(src="img/products-img-6.png", alt="")
+							///col
+						///row
+					///.info-section
+					.info-section.info-section-padding
+						.row
+							.col-lg-6
+								.info-section-image
+									img(src="img/products-img-7.png", alt="")
+							///col
+							.col-lg-6
+								.info-section-textbox
+									h3.info-section-title
+										| Image File Wrapper Access
+									p.info-section-text.mb-0
+										| View and download image file wrapper documents without the hassles of PAIR. Our IFW access works even when PAIR is down and no captcha required!  We also annotate the image file wrapper to show you the rejections present in office actions (for more recent office actions).
+								///.info-section-text
+							///col
+						///row
+					///.info-section
+					.info-section.info-section-padding
+						.row
+							.col-lg-6.order-12.order-lg-1
+								.info-section-textbox
+									h3.info-section-title
+										| And even more
+									p.info-section-text
+										| We automatically generate claim charts in a Microsoft Word file that you could use for an infringement, invalidity, or other analysis.  We also have direct links for the patent at other websites you go to (USPTO assignments, USPTO maintenance fees, and Espacenet).
+									a(href="#0").btn.btn-primary
+										| Try PatentPlex
+								///.info-section-text
+							///col
+							.col-lg-6.order-1.order-lg-12
+								.info-section-image
+									img(src="img/products-img-8.png", alt="")
+							///col
+						///row
+					///.info-section
+				///.container
+			///.subsection-blue-bg
+		///section
+
+
+		section.section.pt-5.section-reviews-text-bg
+			img.reviews-text-bg-img(src="img/reviews-text-bg.png", alt="")
+			.container
+				h5.section-subtitle
+					| testimonials
+				h2.section-title
+					| What Our Clients Have to Say
+				.owl-carousel.owl-theme.js-owl-reviews-two-cards.owl-reviews
+					.item
+						blockquote.card-review
+							img(src="img/icon-review.png", alt="").card-review-icon
+							p.card-review-text
+								| The patent timelines provide a succinct visual history of a case, enabling me to quickly assess key dates and prosecution events (such as office actions, RCEs, and appeals), which helps me get up to speed on transferred matters and more efficiently review recommended strategies for matters I supervise.
+							.card-review-author
+								img(src="img/review-author-img-9.jpg", alt="").card-review-author--img
+								h5.card-review-author--title
+									| Melanie Grover
+								h6.card-review-author--subtitle
+									| Brake Hughes Bellermann
+						///.card-review
+					///.item
+				///.owl-carousel
+			///container
+		///testimonials
+
+
+		section.section-darknes-bg
+			.container
+				h5.section-subtitle.text-primary
+					| why use patent plex
+				h2.section-title
+					| The 
+					span.text-primary
+						| Information You Need 
+					br
+					| at Your Fingertips
+				.row
+					.col-md-6.col-lg-4
+						.card-info.mb-lg-4.mb-xl-0
+							.card-info-img
+								img(src="img/icon-card-18.png", alt="")
+							h3.card-info-title
+								| Better Prosecution Decisions
+							p.card-info-text.text-light-grey
+								| Whether you have a third RCE or a first office action makes an enormous difference with prosecution strategy. A unitary patent versus a large family also matters. Start your office action response preparation with PatentPlex.
+						///.card-info
+					///col
+					.col-md-6.col-lg-4
+						.card-info.mb-lg-4.mb-xl-0
+							.card-info-img
+								img(src="img/icon-card-16.png", alt="")
+							h3.card-info-title
+								| Pays for Itself
+							p.card-info-text.text-light-grey
+								| PatentPlex pays for itself with the time you save.  Generating claim charts and family trees is tedious and time consuming.  We provide them to you in seconds.  Let PatentPlex be your starting point for patent research to get what you need faster.
+						///.card-info
+					///col
+					.col-md-6.col-lg-4
+						.card-info.mb-lg-4.mb-xl-0
+							.card-info-img
+								img(src="img/icon-card-19.png", alt="")
+							h3.card-info-title
+								| Great for Litigators
+							p.card-info-text.text-light-grey
+								| Litigators and other attorneys needing to research a patent will love PatentPlex.  Our patent analyzer and claim charts help you analyze patents to evaluate infringement, invalidate patent claims, or determine the value of a patent or portfolio.
+						///.card-info
+					///col
+				///.row
+				.text-center.pt-5
+					a(href="#0").btn.btn-primary
+						| Try PatentPlex
+		///try our products now
+	/// .main

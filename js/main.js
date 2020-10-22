@@ -97,4 +97,31 @@ $(document).ready(function() {
 		}
 	});
 
+
+	// owl-carousel js-owl-reviews
+	let owl3 = $('.js-owl-reviews-two-cards');
+	owl3.owlCarousel({
+		nav:true,
+		responsive:{
+			0:{
+				autoplay:true,
+				items:1
+			},
+			545:{
+				autoplay:true,
+				items:1
+			},
+			768:{
+				autoplay:true,
+				items:2
+			},
+			991:{
+				items:2
+			},
+			1200:{
+				items:2
+			}
+		}
+	});
+
 });

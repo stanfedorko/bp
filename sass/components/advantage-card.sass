@@ -1,0 +1,32 @@
+.advantage-card
+  padding: 50px 0
+  @include media-breakpoint-down(sm)
+    padding: 30px 0
+  &--header
+    margin-bottom: 10px
+    display: flex
+    align-items: center
+  &--lowtime
+    +rem(20)
+    color: $danger
+    display: inline-block
+    margin-right: 15px
+    font-weight: 400
+    line-height: 32px
+  &--icon-right
+    width: 100%
+    max-width: 21px
+    margin-right: 10px
+  &--time
+    color: $success
+    font-weight: 700
+    +rem(27)
+    display: inline-block
+    line-height: 32px
+    @include media-breakpoint-down(lg)
+      +rem(25)
+    @include media-breakpoint-down(xs)
+      +rem(23)
+  &--text
+    font-weight: 400
+    color: $text-secondary
