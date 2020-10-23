@@ -113,7 +113,7 @@ $(document).ready(function() {
 			},
 			768:{
 				autoplay:true,
-				items:2
+				items:1
 			},
 			991:{
 				items:2
