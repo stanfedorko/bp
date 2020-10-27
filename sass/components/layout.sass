@@ -19,7 +19,7 @@
 
 
 .subsection-blue-bg
-  background-color: rgba(199,229,241,0.2)
+  background-color: rgb(244, 250, 252)
   position: relative
   overflow: hidden
   z-index: 1
@@ -44,6 +44,12 @@
     bottom: 0
     width: 0
     height: 0
+  &.no-after
+    padding-bottom: 100px
+    @include media-breakpoint-down(md)
+      padding-bottom: 0px
+    &::after
+      display: none
 
 @media (max-width: 2560px)
   .subsection-blue-bg
@@ -138,18 +144,26 @@
     position: absolute
     top: 0
     right: 0
+  &.before-blue
+
 
 @media (max-width: 2560px)
   .section-darknes-bg
     &::before
       border-top: 230px solid #fff
       border-left: 2560px solid transparent
+    &.before-blue
+      &::before
+        border-top: 230px solid rgb(244, 250, 252)
 
 @media (max-width: 1920px)
   .section-darknes-bg
     &::before
       border-top: 150px solid #fff
       border-left: 1920px solid transparent
+    &.before-blue
+      &::before
+        border-top: 150px solid rgb(244, 250, 252)
 
 @media (max-width: 1440px)
   .section-darknes-bg
@@ -161,7 +175,9 @@
     &::before
       border-top: 120px solid #fff
       border-left: 1024px solid transparent
-
+    &.before-blue
+      &::before
+        border-top: 120px solid rgb(244, 250, 252)
 
 
 
