@@ -1,0 +1,198 @@
+extends templates/template.pug
+
+block content
+	// .main
+	main.main
+		section.section-home.art-unit-predictor-home
+			.section-home-blink
+				.container
+					.section-home-content
+						h1.section-home-title.bigger
+							| Art Unit Predictor
+						h4.section-home-subtitle
+							| Steer your patents away from the hardest 
+							br
+							| groups and art units at the USPTO. 
+						a(href="#0").btn.btn-primary
+							| Try Art Unit Predictor
+				///container
+			///section-home-blink
+		///section-home
+
+
+		section.section-top-white-angel.pt-5.pt-sm-4.pt-md-0.pb-5
+			.container
+				h3.info-section-title.text-dark
+					| Grant rates in Art Units:
+				.row
+					.col-lg-4.col-sm-6
+						.percent-card
+							.percent-card--number.text-danger
+								| 5%
+							.percent-card--text
+								| Art Unit 3689 grant rate
+								img(src="img/frowning-face.png", alt="", style="max-width: 20px;").ml-1
+						///.percent-card
+					///col
+					.col-lg-4.col-sm-6
+						.percent-card
+							.percent-card--number.text-success
+								| 79%
+							.percent-card--text
+								| Art Unit 2652 grant rate
+								img(src="img/smiling-face.png", alt="", style="max-width: 20px;").ml-1
+						///.percent-card
+					///col
+				///.row
+				h3.text-secondary.m-0
+					| Which one would you rather be in?
+			///.container
+
+
+		section.section
+			.container
+				h5.section-subtitle
+					| why use art unit predictor
+				h2.section-title
+					| Art Unit Prediction Provides Tremendous Value
+				.row
+					.col-lg-4
+						.card-media.card-media-lg-h-100.card-media-xl-h-100.mb-5.mb-lg-0
+							.card-media-header
+								img.card-media-icon(src='img/icon-card-27.png' alt='')
+								h3.card-media-title.text-dark
+									| Why 
+									span.text-primary
+										| you need 
+									| it
+							///.card-media-header
+							p.card-media-text
+								| After filing your patent application, the USPTO assigns it to a group and art unit for examination. Getting the right group and art unit may make the difference between a valuable patent and no patent at all. 
+						///.card-media
+					///col
+					.col-lg-4
+						.card-media.card-media-lg-h-100.card-media-xl-h-100.mb-5.mb-lg-0
+							.card-media-header
+								img.card-media-icon(src='img/icon-card-28.png' alt='')
+								h3.card-media-title.text-dark
+									| How it 
+									span.text-primary
+										| works
+							///.card-media-header
+							p.card-media-text
+								| Use our Art Unit Predictor to see the most likely groups and art units to be assigned to your patent. We also show you the claim words associated with the predictions. You can amend your claims to steer your application to a preferred group and art unit. After amending your claims, rerun predictions to see updated results.
+						///.card-media
+					///col
+					.col-lg-4
+						.card-media.card-media-lg-h-100.card-media-xl-h-100.mb-0
+							.card-media-header
+								img.card-media-icon(src='img/icon-card-29.png' alt='')
+								h3.card-media-title.text-primary
+									| Where it 
+									span.text-dark
+										| helps
+							///.card-media-header
+							p.card-media-text
+								| Our Predictor is most valuable for certain technologies, such as software and machine learning where an application could be assigned to a business method art unit with a 5% grant rate or a computer art unit with a 79% grant rate. 
+						///.card-media
+					///col
+				///row
+			///container
+		///section-products
+
+
+		section.section.subsection-blue-bg.pb-0
+			img.reviews-text-bg-img.reviews-text-bg-img-2(src="img/reviews-text-bg-2.png", alt="")
+			.container
+				h5.section-subtitle
+					| testimonials
+				h2.section-title
+					| What Our Clients Have to Say
+				.owl-carousel.owl-theme.js-owl-reviews-two-cards.owl-reviews
+					.item
+						blockquote.card-review
+							img(src="img/icon-review.png", alt="").card-review-icon
+							p.card-review-text
+								| The art unit predictor is incredibly helpful to give my clients a better chance at obtaining protection for their important inventions.
+							.card-review-author
+								img(src="img/review-author-img-14.jpg", alt="").card-review-author--img
+								h5.card-review-author--title
+									| Nicole Wanty
+								h6.card-review-author--subtitle
+									| Talem IP
+						///.card-review
+					///.item
+				///.owl-carousel
+			///container
+		///testimonials
+
+
+		section.section
+			.container
+				h5.section-subtitle
+					| how it works
+				h2.section-title
+					| How our Art Unit Predictor Works
+				.info-section
+					.row
+						.col-lg-6.order-12.order-lg-1
+							p.info-section-text
+								| Our Art Unit Predictor is a machine learning model trained on public patent data obtained from the USPTO.  We use state-of-the-art neural networks that learn how the USPTO does assignments.  We are able to understand the meaning of patent claims and determine the most likely groups and art units to be assigned.
+							p.info-section-text.mb-0
+								| The prediction task is difficult since humans at the USPTO are involved in the assignments, and humans are less predictable than machines.  For this reason, our predictions include the top 3 groups and top 5 art units. By showing you multiple predictions, we help you steer your applications in the right direction.
+						///col
+						.col-lg-6.order-1.order-lg-12
+							.info-section-image.d-flex.align-items-center.h-100
+								img(src="img/products-img-11.png", alt="")
+						///col
+					///row
+				///.info-section
+			///.container
+		///examples
+
+
+		section.section-darknes-bg
+			.container
+				h5.section-subtitle.text-primary
+					| benefits
+				h2.section-title
+					| Streamline Prosecution 
+					br
+					| with the Right Art Unit
+				.row
+					.col-md-4
+						.card-info.mb-lg-4.mb-xl-0
+							.card-info-img
+								img(src="img/icon-card-30.png", alt="")
+							h3.card-info-title
+								| Stronger Patents
+							p.card-info-text.text-light-grey
+								| Avoid unnecessary claim amendments to obtain more valuable patents for your clients in less time.
+						///.card-info
+					///col
+					.col-md-4
+						.card-info.mb-lg-4.mb-xl-0
+							.card-info-img
+								img(src="img/icon-card-31.png", alt="")
+							h3.card-info-title
+								| Faster Issuance
+							p.card-info-text.text-light-grey
+								| No more filing of a CIP or a Track 1 application with a delayed priority claim to escape a difficult art unit.
+						///.card-info
+					///col
+					.col-md-4
+						.card-info.mb-lg-4.mb-xl-0
+							.card-info-img
+								img(src="img/icon-card-32.png", alt="")
+							h3.card-info-title
+								| Reduce Costs
+							p.card-info-text.text-light-grey
+								| Avoiding the most difficult art units will reduce the number of office actions and appeals on your path to issuance.
+						///.card-info
+					///col
+				///.row
+				.text-center.pt-5
+					a(href="#0").btn.btn-primary
+						| Try Art Unit Predictor
+		///try our products now
+	/// .main
